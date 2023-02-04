@@ -1,0 +1,16 @@
+<h1>edite a lenda:</h1>
+
+<form action="/lendas/updatelenda" method="POST" class="form">    
+    <input type="hidden" name="id" value="{{lenda.id}}"><!-- aqui recebemos um input, mas o hidden não exibe. -->
+   
+    <div class="form-control">
+        <label for="title">nome da lenda</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite o nome da lenda" value="{{lenda.nome}}">
+    </div>
+
+    <div class="form-control">
+        <label for="posicao">Posição da lenda</label>
+        <input type="text" name="posicao" id="posicao" placeholder="Qual a posição da lenda" value="{{lenda.posicao}}">
+    </div>
+    <input type="submit" value="editar">
+</form>

@@ -1,0 +1,11 @@
+<h1>lendas cadastradas</h1>
+
+<div class="lendas-container">
+    <a href="/">adicionar lendas</a>
+    {{#each lendas}}
+    <div>
+        #{{this.id}} - <span class="bold"><a href="/lendas/{{this.id}}">{{this.nome}}</a> a posição é </span>{{this.posicao}}
+    </div>
+    {{/each}}
+
+</h1>
